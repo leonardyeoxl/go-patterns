@@ -10,7 +10,7 @@ func getBuilder(builderType string) iBuilder {
     if builderType == "normal" {
         return &normalCarBuilder{}
     }
-    if builderType == "igloo" {
+    if builderType == "sports" {
         return &sportsCarBuilder{}
     }
     return nil

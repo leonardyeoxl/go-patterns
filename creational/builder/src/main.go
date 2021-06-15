@@ -1,12 +1,14 @@
 package main
 
-import "fmt"
+import (
+    "fmt"
+)
 
 func main() {
     normalCarBuilder := getBuilder("normal")
     sportsCarBuilder := getBuilder("sports")
 
-    constructor := newDirector(normalCarBuilder)
+    constructor := newConstructor(normalCarBuilder)
     normalCar := constructor.buildCar()
 
     fmt.Printf("Normal Car Door Type: %s\n", normalCar.doorType)
