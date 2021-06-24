@@ -3,16 +3,16 @@ package main
 import "fmt"
 
 func main() {
-    adidasFactory, _ := getSportsAttireFactory("adidas")
-    nikeFactory, _ := getSportsAttireFactory("nike")
-    nikeShoe := nikeFactory.makeShoe()
-    nikeShort := nikeFactory.makeShort()
-    adidasShoe := adidasFactory.makeShoe()
-    adidasShort := adidasFactory.makeShort()
-    printShoeDetails(nikeShoe)
-    printShortDetails(nikeShort)
-    printShoeDetails(adidasShoe)
-    printShortDetails(adidasShort)
+    brandAFactory, _ := getSportsAttireFactory("brandA")
+    brandBFactory, _ := getSportsAttireFactory("brandB")
+    brandBShoe := brandBFactory.makeShoe()
+    brandBShort := brandBFactory.makeShort()
+    brandAShoe := brandAFactory.makeShoe()
+    brandAShort := brandAFactory.makeShort()
+    printShoeDetails(brandBShoe)
+    printShortDetails(brandBShort)
+    printShoeDetails(brandAShoe)
+    printShortDetails(brandAShort)
 }
 
 func printShoeDetails(s iShoe) {

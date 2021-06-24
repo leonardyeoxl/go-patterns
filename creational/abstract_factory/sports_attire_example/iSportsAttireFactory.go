@@ -10,11 +10,11 @@ type iSportsAttireFactory interface {
 }
 
 func getSportsAttireFactory(brand string) (iSportsAttireFactory, error) {
-	if brand == "adidas" {
-		return &adidas{}, nil
+	if brand == "brandA" {
+		return &brandA{}, nil
 	}
-	if brand == "nike" {
-		return &nike{}, nil
+	if brand == "brandB" {
+		return &brandB{}, nil
 	}
 	return nil, fmt.Errorf("Wrong brand type passed")
 }

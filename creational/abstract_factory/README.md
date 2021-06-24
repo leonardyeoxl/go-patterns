@@ -41,18 +41,18 @@ Then there is another problem where sport attire vendors update their catalog of
 
 ## How to Apply?
 
-- when your code needs to work with various families of related products and do not want to depend on concrete classes of those products
-- when you do not want to worry about creating wrong variant of a product that does not match the products already created by your application
+- When your code needs to work with various families of related products and do not want to depend on concrete classes of those products
+- When you do not want to worry about creating wrong variant of a product that does not match the products already created by your application
 
 ## Pros and Cons
 
 ### Pros
 
-- the products that you are getting from a factory are compatible with each other
-- avoid tight coupling between concrete products and client code
+- The products that you are getting from a factory are compatible with each other
+- Avoid tight coupling between concrete products and client code
 - Fulfills *Single Responsibility Princple*
 - Fulfills *Open/Closed Principle*
 
 ### Cons
 
-- code may become complicated than it should be
+- Code may become complicated than it should be
